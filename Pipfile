@@ -9,3 +9,6 @@ sqlalchemy = "*"
 
 [requires]
 python_version = "3.7"
+
+[dev-packages]
+flake8 = "*"
