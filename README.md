@@ -3,7 +3,7 @@
 ```
 pip install pipenv
 pipenv --three # create a virtualenv
-pipenv install flask sqlalchemy python-dotenv marshmallow # install dependencies
+pipenv install --dev # install dependencies
 ```
 
 # Getting started
