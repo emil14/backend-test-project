@@ -8,10 +8,9 @@ def handle_root():
     return 'from flask import hello_world!'
 
 
-@app.route('/api')
+@app.route('/catalog')
 def handle_api():
-    # return mock.data
-    return jsonify('{data: []}')
+    return jsonify()
 
 
 if __name__ == "__main__":
