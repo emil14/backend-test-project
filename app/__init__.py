@@ -1,17 +1,15 @@
-from flask import Flask, jsonify
+import os
+from flask import Flask
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def handle_root():
-    return 'from flask import hello_worl2d!'
+SECRET_KEY = os.getenv("FLASK_SECRET_KEY")
 
 
-@app.route('/catalog')
-def handle_api():
-    return jsonify()
+def create_app():
+    app = Flask(__name__)
+    app.config.from_mapping(SECRET_KEY=SECRET_KEY)
 
+    @app.route('/')
+    def handle_root():
+        return 'Well hello traveler'
 
-if __name__ == "__main__":
-    app.run()
+    return app
