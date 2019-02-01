@@ -6,7 +6,6 @@ verify_ssl = true
 [packages]
 flask = "*"
 sqlalchemy = "*"
-python-dotenv = "*"
 marshmallow = "*"
 
 [requires]
@@ -14,4 +13,5 @@ python_version = "3.7"
 
 [dev-packages]
 flake8 = "*"
+python-dotenv = "*"
 ptpython = "*"
