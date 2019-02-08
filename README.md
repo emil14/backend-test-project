@@ -10,5 +10,5 @@ pipenv install --dev # install dependencies
 
 ```shell
 pipenv shell # enter the virtualenv
-./bootstrap.sh # setup env-vars and run flask
+flask run # start webserver
 ```
