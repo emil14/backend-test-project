@@ -1,5 +1,8 @@
 import os
 from flask import Flask
+from . import db
+
+print(db.engine)
 
 
 def create_app():
