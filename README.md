@@ -32,3 +32,5 @@ To enter the database shell:
 sudo su - postgres # change user
 psql # enter the matrix
 ```
+
+Make sure you have restarted pipenv's shell if you update `.env` file
