@@ -22,8 +22,13 @@ Make sure you have `.env` file setup. Then go to the terminal and type:
 ```shell
 pipenv shell # enter the matrix
 flask run # start web-server
+```
 
-# run PostgreSQL shell:
-sudo su - postgres
-psql
+By now you should be able to go to http://127.0.0.1:8080/ and see the application running.
+
+To enter the database shell:
+
+```shell
+sudo su - postgres # change user
+psql # enter the matrix
 ```
