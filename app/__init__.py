@@ -2,7 +2,7 @@ import os
 from flask import Flask
 from . import db
 
-print(db.engine)
+type = db.Type(name='Car', props_ids=[1, 2])
 
 
 def create_app():

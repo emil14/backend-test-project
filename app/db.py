@@ -10,3 +10,17 @@ class Type(Base):
     __tablename__ = 'types'
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
+    props_ids = Column(Integer)
+
+
+class Prop(Base):
+    __tablename__ = 'props'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50))
+
+
+class Product(Base):
+    __tablename__ = 'products'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50))
+    type_id = Column(Integer)
