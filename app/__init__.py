@@ -1,8 +1,11 @@
 import os
 from flask import Flask
-from . import db
+from .db import Type, Session
 
-type = db.Type(name='Car', props_ids=[1, 2])
+session = Session()
+type_example = Type(name='Car', props_ids=[1, 2])
+session.add(type_example)
+session.commit()
 
 
 def create_app():
