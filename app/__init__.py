@@ -1,7 +1,8 @@
 import os
 from flask import Flask
-from .db import Type, Session
+from .db import engine, Base, Type, Session
 
+Base.metadata.create_all(engine)
 session = Session()
 type_example = Type(name='Car', props_ids=[1, 2])
 session.add(type_example)
